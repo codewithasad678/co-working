@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
   </head>
   <body>
@@ -16,46 +16,46 @@
       <!-- navbar start  -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="my_nav">
         <div class="container" >
-          <a class="navbar-brand text-white fw-bold fs-2  " href="#">SEO Dream <img src="images/logo-icon.png" alt="" class="img-fluid"></a>
+          <a class="navbar-brand text-white fw-bold fs-2  " href="#home">SEO Dream <img src="images/logo-icon.png" alt="" class="img-fluid"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active  text-white px-2 fs-5" aria-current="page" href="#">Home</a>
+                <a class="nav-link active  text-white px-2 fs-5" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white px-2 fs-5" href="#">Features</a>
+                <a class="nav-link text-white px-2 fs-5" href="#feature">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white px-2 fs-5" href="#">About Us</a>
+                <a class="nav-link text-white px-2 fs-5" href="#aboutus">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white px-2 fs-5" href="#">Services</a>
+                <a class="nav-link text-white px-2 fs-5" href="#ourservices">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white px-2 fs-5" href="#">Portfolio</a>
+                <a class="nav-link text-white px-2 fs-5" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white px-2 fs-5" href="#">Contact Us</a>
+                <a class="nav-link text-white px-2 fs-5" href="#contactus">Contact Us</a>
               </li>
             </ul>
             <form class="">
-              <button class="btn " id="nav_button" type="submit"><a href="#" >Get Your Quote</a></button>
+              <button class="btn " type="submit"><a href="#" id="nav_button"  >Get Your Quote</a></button>
             </form>
           </div>
         </div>
       </nav>
       <!-- navbar end  -->
       <!-- main section start  -->
-      <section>
+      <section id="home">
         <div class="main_background">
           <div class="container">
             <div class="row justify-content-evenly">
               <!-- left side main content start  -->
               <div class="col-lg-6 col-12 mb-0">
-                <div class="main_left">
+                <div class="main_left" data-aos="fade-right">
                   <div class="status d-flex ">
                     <div class="row justify-content-evenly mx-auto">
                       <div class="col-lg-4 col-sm-4 px-0">
@@ -89,7 +89,7 @@
               <!-- left side end here  -->
               <!-- right side start here  -->
               <div class="col-lg-6 col-12 ">
-                <div class="main_right ">
+                <div class="main_right " data-aos="fade-left" >
                   <img src="images/banner-right-image.png"  class="img-fluid" alt="">
                 </div>
               </div>
@@ -102,15 +102,16 @@
     </header>
     <!-- header end  -->
     <!-- main content start  -->
-      <main>
-        <section class="card_progress">
+      <main >
+        <section class="card_progress" id="feature">
           <div class="container" id="card_progess">
-            <div class="row">
+            <div class="row justify-content-evenly">
               <!-- card 1  -->
-              <div class="col-md-3 col-12">
-                <div class="my_card">
+              <div class="col-md-3 col-10 px-0 ">
+                <div class="my_card1 " data-aos="fade-up"
+                data-aos-duration="1000">
                   <div class="img_upper_card">
-                    <img src="images/features-number-01.png" alt="" class="icon_img">
+                    <img src="images/features-number-01.png" alt="" class="icon_img img-fluid">
                     <img src="images/features-icon-black-01.png" alt="" class="dark_icon">
                     <h4 class="title_card">Reach</h4>
                     <hr class="mx-auto w-50">
@@ -119,10 +120,11 @@
                 </div>
               </div>
               <!-- card 2 start-->
-              <div class="col-md-3 col-12 ">
-                <div class="my_card">
+              <div class="col-md-3 col-10 px-0">
+                <div class="my_card2 " data-aos="fade-up"
+                data-aos-duration="1000">
                   <div class="img_upper_card">
-                    <img src="images/features-number-02.png" alt="" class="icon_img">
+                    <img src="images/features-number-02.png" alt="" class="icon_img img-fluid">
                     <img src="images/features-icon-black-02.png" alt="" class="dark_icon">
                     <h4 class="title_card">Develop a Stretegy</h4>
                     <hr class="mx-auto w-50">
@@ -131,10 +133,11 @@
                 </div>
               </div>
               <!-- card 3  -->
-              <div class="col-md-3 col-12 ">
-                <div class="my_card">
+              <div class="col-md-3 col-10 px-0">
+                <div class="my_card3" data-aos="fade-up"
+                data-aos-duration="1000">
                   <div class="img_upper_card">
-                    <img src="images/features-number-03.png" alt="" class="icon_img">
+                    <img src="images/features-number-03.png" alt="" class="icon_img img-fluid">
                     <img src="images/features-icon-black-01.png" alt="" class="dark_icon">
                     <h4 class="title_card">Implementation</h4>
                     <hr class="mx-auto w-50">
@@ -143,10 +146,11 @@
                 </div>
               </div>
               <!-- card 4 start-->
-              <div class="col-md-3 col-12 ">
-                <div class="my_card">
+              <div class="col-md-3 col-10 px-0">
+                <div class="my_card4" data-aos="fade-up"
+                data-aos-duration="1000">
                   <div class="img_upper_card">
-                    <img src="images/features-number-04.png" alt=""  class="icon_img">
+                    <img src="images/features-number-04.png" alt=""  class="icon_img img-fluid">
                     <img src="images/features-icon-black-02.png" alt="" class="dark_icon">
                     <h4 class="title_card">Analyze the Result</h4>
                     <hr class="mx-auto w-50">
@@ -157,11 +161,323 @@
             </div>
           </div>
         </section>
+        <!-- ================== about us  start ====================  -->
+        <section class="about_us" id="aboutus">
+          <div class="container">
+            <div class="row my-5 justify-content-evenly">
+              <div class="col-md-6 col-10">
+                <div class="img_about_us" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <img src="images/about-left-image.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-md-6 col-10 py-5">
+                <div class="right_about_us " data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <h6 class="about_us_heading special_clr">About us</h6>
+                  <h2 class="about_us_title">Top <span class="special_clr">Marketing </span>Agency & Consult Your Website <span class="special_clr_2">With Us</span></h2>
+                  <div class="status_about_us d-flex justify-content-between">
+                    <div class="status_about_us_inner">
+                      <h1 class="special_clr_2 fw-bold">750+</h1>
+                      <h6>Project Finished</h6>
+                    </div>
+                    <div class="status_about_us_inner">
+                      <h1 class="special_clr_2 fw-bold">340+</h1>
+                      <h6>Happy Client</h6>
+                    </div>
+                    <div class="status_about_us_inner">
+                      <h1 class="special_clr_2 fw-bold">128+</h1>
+                      <h6>Award</h6>
+                    </div>
+                  </div>
+                  <div class="description_about_us">
+                    <p><span class="special_clr_2"> SEO Dream</span> is free digital marketing CSS template provided by TemplateMo website. You are allowed to use this template for your business websites. Please DO NOT redistribute this template ZIP file on any Free CSS collection websites. You may contact us for more information. Thank you.</p>
+                    <div class="about_us_btn text-center">
+                      <button class="btn  spacial_margin" id="main_button" type="submit"><a href="#" class="text-white">Discover Company</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========================about section end and Services start here ================ -->
+        <section class="our_services" id="ourservices">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="head_services" data-aos="fade-up"
+                data-aos-duration="1000">
+                  <h4 class="our_services_heading special_clr text-center">Our Services</h4>
+                  <h2 class="text-center fw-bold">Discover What We Do & <span class="special_clr_2">Offer</span> </h2>
+                  <h2 class="text-center fw-bold">To Our <span class="special_clr">Clients</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="row my-5 justify-content-evenly">
+              <div class="col-md-6 col-lg-4 col-10" data-aos="fade-right"
+              data-aos-duration="1000">
+                <!-- card 1  -->
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4 col-12">
+                      <div class="img_icon_services mx-auto mx-auto">
+                        <img src="images/service-icon-01.png" class="img-icon-s  " alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body textcenter">
+                        <h5 class="card-title fw-bold">Similar Website</h5>
+                        <p class="card-text py-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div class="col-md-6 col-lg-4 col-10"  data-aos="fade-up"
+              data-aos-duration="1000">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <div class="img_icon_services mx-auto ">
+                        <img src="images/service-icon-02.png" class="img-icon-s" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body textcenter">
+                        <h5 class="card-title fw-bold">Page Optimizations</h5>
+                        <p class="card-text py-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div class="col-md-6 col-lg-4 col-10 "data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <div class="img_icon_services mx-auto ">
+                        <img src="images/service-icon-03.png" class="img-icon-s" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body textcenter">
+                        <h5 class="card-title fw-bold">Deep URL Analysis</h5>
+                        <p class="card-text py-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div class="col-md-6 col-lg-4 col-10"  data-aos="fade-right"
+              data-aos-duration="1000">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <div class="img_icon_services mx-auto ">
+                        <img src="images/service-icon-02.png" class="img-icon-s" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body textcenter">
+                        <h5 class="card-title fw-bold">Website Trends</h5>
+                        <p class="card-text py-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div class="col-md-6 col-lg-4 col-10" data-aos="fade-up"
+              data-aos-duration="1000">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <div class="img_icon_services mx-auto ">
+                        <img src="images/service-icon-01.png" class="img-icon-s" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body textcenter">
+                        <h5 class="card-title fw-bold">Traffic Analysis</h5>
+                        <p class="card-text py-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2  -->
+              <div class="col-md-6 col-lg-4 col-10" data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <div class="img_icon_services mx-auto ">
+                        <img src="images/service-icon-03.png" class="img-icon-s" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body textcenter ">
+                        <h5 class="card-title fw-bold">Optimizing Keyword</h5>
+                        <p class="card-text py-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dormque laudantium.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========================Services section end  ================ -->
+        <!-- ========================Portfolio section start  ================ -->
+        <section class="portfolio my-5" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="portfolio_heading">
+                  <h4 class="special_clr">Our Portfolio</h4>
+                  <h2 class="fw-bold">Discover Our Recent <span class="special_clr">Project</span> And</h2>
+                  <h2 class="special_clr_2 fw-bold">Showcase</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-10 col-md-6 col-lg-4"  data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="portfolio_img">
+                <img src="images/portfolio-01.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-6 col-lg-4" data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="portfolio_img">
+                <img src="images/portfolio-02.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-6 col-lg-4" data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="portfolio_img">
+                <img src="images/portfolio-03.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-6 col-lg-4" data-aos="fade-right"
+              data-aos-duration="1000">
+                <div class="portfolio_img">
+                <img src="images/portfolio-04.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-6 col-lg-4" data-aos="fade-right"
+              data-aos-duration="1000">
+                <div class="portfolio_img">
+                <img src="images/portfolio-05.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-10 col-md-6 col-lg-4" data-aos="fade-right"
+              data-aos-duration="1000">
+                <div class="portfolio_img">
+                <img src="images/portfolio-06.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========================Contact Us =========================  -->
+        <section class="contact_us" id="contactus">
+          <div class="container contact_us_inner">
+            <div class="row">
+              <div class="col-md-12" data-aos="fade-left"
+              data-aos-duration="1000">
+                <div class="contact_us_title">
+                  <h4 class="special_clr text-center">Contact Us</h4>
+                  <h2 class="fw-bold text-center">Fill Out The Form Below To <span class="special_clr_2">Get </span>In</h2>
+                  <h2 class="fw-bold text-center"> <span class="special_clr">Touch</span> With Us</h2> 
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-md-8 col-10" data-aos="fade-up"
+              data-aos-duration="1000">
+                <form action="">
+                  <table class="table table-borderless">
+                    <tr>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <textarea name="message" id="message1" cols="" rows="7" class="text_area"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center" data-aos="fade-right"
+                      data-aos-duration="1000">
+                        <button class="btn  spacial_margin" id="main_button" type="submit"><a href="#" class="text-white">Send Message Now</a></button>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </div>
+              <div class="col-md-3 col-10 pb-3" data-aos="fade-up"
+              data-aos-duration="1000">
+                <div class="social_area">
+                  <div class="social_area_media py-3 my-2 text-center">
+                    <img src="images/contact-icon-01.png" alt="">
+                    <h6 class="pt-4"><a href="mailto:info@company.com" class="text-dark">info@company.com </a></h6>
+                  </div>
+                  <div class="social_area_media py-3 my-2 text-center">
+                    <img src="images/contact-icon-02.png" alt="">
+                    <h6 class="pt-4"><a href="tel:+001-002-0034" class="text-dark">+001-002-0034</a></h6>
+                  </div>
+                  <div class="social_area_media py-3 my-2 text-center">
+                    <img src="images/contact-icon-03.png" alt="">
+                    <h6 class="pt-4">26th Street, Digital Villa</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ================== contact us end ============================== -->
       </main>
+      <div class="to_top">
+        <a href="#my_nav" class="text-white fw-bold fs-1">^</a>
+      </div>
+      <footer>
+        <!-- ======================== footer ====================== -->
+        <section class="footer_area">
+          <p>Copyright © 2021 SEO Dream Co., Ltd. All Rights Reserved.</p>
+          <p>Web Designed by <a href="#" class="footer_link">TemplateMo</a></p>
+        </section>
+      </footer>
     <!-- main content end  -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
-<!-- 
- -->

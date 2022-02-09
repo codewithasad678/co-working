@@ -7,6 +7,9 @@ a{
     text-decoration: none !important;
     color: white ;
 }
+body{
+    scroll-behavior: smooth !important;
+}
 /* navbar style  start*/
 #my_nav{
     background-color: #34cbc2 !important;
@@ -28,18 +31,15 @@ a{
     color: #4972ca !important;
     box-shadow: 0px 2px #4972ca;
 }
-@media only screen and (max-width:1200px) and (min-width:1100px){
+@media only screen and (max-width:1200px) and (min-width:900px){
     #nav_button{
-        padding: 8px 20px;
+        padding: 8px 13px;
     }
 }
-/* navbar end  */
+/* =========================navbar end ========================= */
 
 
-
-
-
-/* main part style start */
+/*======================= main part style start===================== */
 .main_background{  
     position: relative;
     /* width: 100%; */
@@ -96,6 +96,7 @@ a{
 }
 .main_right {
   position: relative;
+  z-index: 99;
 }
 .main_right img{
     position: absolute;
@@ -126,29 +127,64 @@ a{
 
 
 
-/* section card progress  */
+/* ========================section card progress ======================= */
 #card_progess{
     background-color: white;
-    height: 70vh;
+    height: autovh;
     box-shadow: 2px 2px 8px gray;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: 200px;
 }
-
 .img_upper_card{
     position: relative;
+    color: black;
+    padding: 0px 10px;
+    height: auto;
 }
-.my_card:hover{
-    background-image: linear-gradient(to right,#32c7c5,#05799c);
-    border-radius: 50px;
+.img_upper_card:hover{
+    color: white;
 }
+
 .icon_img{
     position: absolute;
     top: -35px;
     left: 30%;
 }
-.my_card{
-    height: 70vh;
+.my_card1{
+    height: auto;
+    padding-bottom: 10px;
+}
+.my_card2{
+    height: auto;
+    padding-bottom: 10px;
+}
+.my_card3{
+    height: auto;
+    padding-bottom: 10px;
+}
+.my_card4{
+    height: auto;
+    padding-bottom: 10px;
+}
+.my_card1:hover{
+    background-image: linear-gradient(to right,#f9994f,#fd546b);
+    border-radius: 20px;
+    color: white;
+}
+.my_card2:hover{
+    background-image: linear-gradient(to right,#32c7c5,#05799c);
+    border-radius: 20px;
+    color: white;
+}
+.my_card3:hover{
+    background-image: linear-gradient(to right,#3c28d7,#5093fe);
+    border-radius: 20px;
+    color: white;
+}
+.my_card4:hover{
+    background-image: linear-gradient(to right,#f84da9,#9351ef);
+    border-radius: 20px;
+    color: white;
 }
 .dark_icon{
     padding: 100px 0px 30px 0px;
@@ -164,4 +200,164 @@ a{
 }
 .card_para{
     text-align: center;
+}
+
+/* circle progress  start */
+
+@media only screen and (max-width:767px){
+    .icon_img{
+        position: absolute;
+        top: -35px;
+        left: 35%;
+    }
+    #card_progess{
+        background-color: white;
+        height: auto;
+        box-shadow: 0px 0px 0px white;
+        border-radius: 20px;
+        margin-top: 200px;
+    }
+    .my_card1{
+        height: auto;
+        border-radius: 20px;
+        margin-top: 50px;
+        box-shadow: 2px 2px 8px gray;
+    }
+    .my_card2{
+        height: auto;
+        border-radius: 20px;
+        margin-top: 50px;
+        box-shadow: 2px 2px 8px gray;
+    }
+    .my_card3{
+        height: auto;
+        border-radius: 20px;
+        margin-top: 50px;
+        box-shadow: 2px 2px 8px gray;
+    }
+    .my_card4{
+        height: auto;
+        border-radius: 20px;
+        margin-top: 50px;
+        box-shadow: 2px 2px 8px gray;
+    }
+}
+/* ====================== About Us start ====================== 
+===============================================================*/
+
+.about_us_heading{
+    font-size: 28px;
+}
+.special_clr{
+    color: #2bd0c2;
+}
+.about_us_title{
+    font-weight: bold;
+}
+.special_clr_2{
+    color: #0a94c5;
+}
+.status_about_us{
+    margin: 10px 0px;
+}
+.description_about_us{
+    margin: 10px 0px;
+
+}
+.spacial_margin{
+    margin: 10px 0px;
+}
+@media only screen and (max-width:992px) and (min-width:768px){
+    .about_us_title{
+        font-size: 22px;
+    }
+    .status_about_us{
+        margin: 5px 0px;
+    }
+    .description_about_us{
+        margin: 5px 0px;
+    
+    }
+    .spacial_margin{
+        margin: 5px 0px;
+    }
+}
+@media only screen and (max-width:768px){
+    .about_us_heading{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+/* ================ Services start here ================== */
+.our_services{
+    margin: 7% 0px;
+}
+.img_icon_services{
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 40px 15px;
+}
+.img-icon-s{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media only screen and (max-width:768px){
+    .textcenter{
+        text-align: center;
+    }
+}
+/* ======= Contact us =================  */
+.contact_us{
+    background-image: url('../images/contact-bg.jpg');
+    padding: 10% 0;
+}
+.contact_us_inner{
+    background-color: white;
+    border-radius: 30px;
+    padding:3% 10%;
+}.contact_us_title{
+    margin: 3% 0;
+}
+.social_area{
+    border: 1px solid rgb(202, 201, 201);
+}
+.text_area{
+    width: 100%;
+}
+/* =============== footer ===================  */
+.footer_link{
+    color: #2bd0c2;
+}
+.footer_area{
+    padding: 3% 0 2% 0;
+    text-align: center;
+}
+/* ============= Portfolio ================ */
+.portfolio_img{
+    padding: 20px;
+}
+.portfolio_img img{
+    border-radius: 20px;
+}
+.to_top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-image: linear-gradient(to right,#f9994f,#fd546b);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.to_top a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
